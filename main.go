@@ -6,16 +6,20 @@ import (
 	rvsStr "mypackgs"
 )
 
+//using a package 
 func tellingFacts(word string) string {
 	return word
 }
 
 func main() {
+	 //variable declarations
 	var uname = "DRIFT"
 	var time = 12
 	const pi = 3.14
 	var array [3]string
+    
 
+	//arrays
 	array[0] = "drift"
 	array[1] = "wood"
 	array[2] = "jidamva"
@@ -36,7 +40,7 @@ func main() {
 
 	x := 3
 	y := 8
-
+//control statements
 	if x <= y {
 		fmt.Printf("%d is less than %d", x, y)
 
@@ -67,10 +71,7 @@ func main() {
    
    email := make(map[string]string)
    email["jidamva"] = "jidamva@gmail.com"
-
    email["drift"] = "drift@gmail.com"
-   
-
    email["name"] = "name@gmail.com"
    
    fmt.Println(email)
@@ -78,6 +79,7 @@ func main() {
    delete(email,"drift")
    fmt.Println(email["name"])
 
+   //declaring and initializing a map
 school := map[int] string {
 1 : "money",
 2 : "fame",
