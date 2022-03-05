@@ -1,0 +1,90 @@
+package main
+
+import (
+	"fmt"
+	"math"
+	rvsStr "mypackgs"
+)
+
+func tellingFacts(word string) string {
+	return word
+}
+
+func main() {
+	var uname = "DRIFT"
+	var time = 12
+	const pi = 3.14
+	var array [3]string
+
+	array[0] = "drift"
+	array[1] = "wood"
+	array[2] = "jidamva"
+
+	number := []int{1, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	//also we can declare variable as
+
+	value := 6.55
+	fmt.Println(array)
+	fmt.Println(number[1:4])
+	fmt.Println(tellingFacts("drift"))
+	fmt.Println(rvsStr.Reverse("Hello"))
+	fmt.Println(uname, time, pi, value)
+	fmt.Println("Hello world")
+	fmt.Println(math.Floor(value))
+	fmt.Println(math.Sqrt(value))
+
+	x := 3
+	y := 8
+
+	if x <= y {
+		fmt.Printf("%d is less than %d", x, y)
+
+	} else {
+		fmt.Printf("%d is less than %d", y, x)
+
+	}
+
+   switch x {
+     
+   case 3:
+	fmt.Println("it is 3")
+   case 5:
+	fmt.Println("it is 5")
+   default:
+	 fmt.Println("we dont know it")
+   }
+
+   i:= 0 
+   
+   for i<= 10 {
+	   fmt.Println(i)
+	   i++
+   }
+
+
+   //maps 
+   
+   email := make(map[string]string)
+   email["jidamva"] = "jidamva@gmail.com"
+
+   email["drift"] = "drift@gmail.com"
+   
+
+   email["name"] = "name@gmail.com"
+   
+   fmt.Println(email)
+   fmt.Println(len(email))
+   delete(email,"drift")
+   fmt.Println(email["name"])
+
+school := map[int] string {
+1 : "money",
+2 : "fame",
+3 : "Power"}
+
+fmt.Println(school)
+
+
+
+}
